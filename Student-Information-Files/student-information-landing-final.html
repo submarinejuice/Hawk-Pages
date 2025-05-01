@@ -326,7 +326,36 @@
       background: #F2A900;
       color: #330072;
     }
-    
+    @media (max-width: 650px) {
+    .box-container {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    gap: 20px;
+    }
+    .box h1 {
+    font-size: 25px;
+    }
+    .box p {
+    font-size: 16px;
+    }
+    .header-h1 h1{
+    font-size: 50px;
+    }
+    .find-us-button{
+    font-size: 17px;
+    }
+    .box:hover {
+    transform: scale(1.05);
+    z-index: 10;
+    border-top: 7px solid #F2A900;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    }
+
+    .box-container:hover .box:not(:hover) {
+    filter: none;
+    }
+    }
     
             
         </style> <!--END OF CSS STYLE-->
